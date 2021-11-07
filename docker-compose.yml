@@ -18,17 +18,17 @@ services:
     volumes:
       - ./:/var/www/html
     depends_on:
-      - mysql
+      - dbpg
 
-  mysql:
-    container_name: cv-mysql
-    image: mysql:5.7
+  dbpg:
+    image: postgres:12.8
+    container_name: cv-pg
+    restart: always
     volumes:
-      - ./var/mysql/dbdata/mysql:/var/lib/mysql
+      - ./var/postgresql:/var/lib/postgresql/data
     environment:
-      - "MYSQL_ROOT_PASSWORD=deliveryroot"
-      - "MYSQL_USER=deliveryroot"
-      - "MYSQL_PASSWORD=deliveryroot"
-      - "MYSQL_DATABASE=delivery-db"
+      - "POSTGRES_USER=cv-user"
+      - "POSTGRES_PASSWORD=cv-pass"
+      - "POSTGRES_DB=cv-tables"
     ports:
-      - "3306:3306"
+      - "5432:5432"
