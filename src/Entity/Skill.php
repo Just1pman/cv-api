@@ -2,21 +2,15 @@
 
 namespace App\Entity;
 
+use App\Entity\BaseEntity\BaseEntity;
 use App\Repository\SkillRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass=SkillRepository::class)
  */
-class Skill
+class Skill extends BaseEntity
 {
-    /**
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
-     * @ORM\Column(type="integer")
-     */
-    private $id;
-
     /**
      * @ORM\Column(type="string", length=255)
      */
@@ -26,11 +20,6 @@ class Skill
      * @ORM\Column(type="string", length=255)
      */
     private $level;
-
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
 
     public function getTitle(): ?string
     {
