@@ -88,30 +88,8 @@
     "laminas/laminas-code": {
         "version": "4.4.3"
     },
-    "nelmio/api-doc-bundle": {
-        "version": "4.6",
-        "recipe": {
-            "repo": "github.com/symfony/recipes-contrib",
-            "branch": "master",
-            "version": "3.0",
-            "ref": "c8e0c38e1a280ab9e37587a8fa32b251d5bc1c94"
-        },
-        "files": [
-            "config/routes/nelmio_api_doc.yaml",
-            "config/packages/nelmio_api_doc.yaml"
-        ]
-    },
     "nikic/php-parser": {
         "version": "v4.13.1"
-    },
-    "phpdocumentor/reflection-common": {
-        "version": "2.2.0"
-    },
-    "phpdocumentor/reflection-docblock": {
-        "version": "5.3.0"
-    },
-    "phpdocumentor/type-resolver": {
-        "version": "1.5.1"
     },
     "psr/cache": {
         "version": "1.0.1"
@@ -237,9 +215,6 @@
             "ref": "fadbfe33303a76e25cb63401050439aa9b1a9c7f"
         }
     },
-    "symfony/options-resolver": {
-        "version": "v5.3.7"
-    },
     "symfony/polyfill-intl-grapheme": {
         "version": "v1.23.1"
     },
@@ -257,9 +232,6 @@
     },
     "symfony/polyfill-php81": {
         "version": "v1.23.0"
-    },
-    "symfony/property-info": {
-        "version": "v5.3.8"
     },
     "symfony/proxy-manager-bridge": {
         "version": "v5.3.4"
@@ -322,11 +294,5 @@
     },
     "twig/twig": {
         "version": "v3.3.3"
-    },
-    "webmozart/assert": {
-        "version": "1.10.0"
-    },
-    "zircote/swagger-php": {
-        "version": "3.2.3"
     }
 }
