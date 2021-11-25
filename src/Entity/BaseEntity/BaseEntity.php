@@ -6,7 +6,7 @@ use App\Repository\SkillRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=SkillRepository::class)
+ * @ORM\Entity()
  */
 class BaseEntity
 {
@@ -16,7 +16,6 @@ class BaseEntity
      * @ORM\Column(type="integer")
      */
     private $id;
-
 
     public function getId(): ?int
     {
