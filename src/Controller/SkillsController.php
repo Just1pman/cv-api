@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Repository\SkillRepository;
+use App\Services\RequestService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -30,9 +31,14 @@ class SkillsController extends AbstractController
     /**
      * @Route("/skills", name="add_skill", methods={"POST"})
      * @param Request $request
+     * @param RequestService $requestService
      */
-    public function add(Request $request) {
+    public function add(
+        Request $request,
+        RequestService $requestService
+    ) {
+        $parameters = $requestService($request);
 
-        dd($request);
+        dd($parameters);
     }
 }

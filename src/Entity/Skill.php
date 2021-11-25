@@ -2,7 +2,6 @@
 
 namespace App\Entity;
 
-use App\Entity\BaseEntity\BaseEntity;
 use App\Repository\SkillRepository;
 use Doctrine\ORM\Mapping as ORM;
 

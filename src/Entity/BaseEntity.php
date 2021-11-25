@@ -1,8 +1,7 @@
 <?php
 
-namespace App\Entity\BaseEntity;
+namespace App\Entity;
 
-use App\Repository\SkillRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
