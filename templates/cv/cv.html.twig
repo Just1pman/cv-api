@@ -1,0 +1,118 @@
+{% set c_blue = '#4E74FF' %}
+{% set c_darkblue = '#282828' %}
+{% set c_gray = '#707689' %}
+
+<style>
+    .blue-font {
+        color: {{ c_blue }};
+    }
+
+    .main-heading {
+        font-size: 40px;
+    }
+
+    .main-subtitle {
+        font-size: 14px;
+    }
+
+    .section-header {
+        font-size: 14px;
+    }
+
+    .item {
+        font-size: 8px;
+        color: {{ c_gray }};
+    }
+
+    .item-header {
+        font-size: 10px;
+        color: {{ c_darkblue }};
+    }
+
+    .item-header span{
+        color: {{ c_gray }};
+    }
+
+    .item-subheader {
+        color: {{ c_darkblue }};
+        font-size: 8px;
+    }
+
+    .social-link {
+        /*line-height: 20px;*/
+        text-decoration: none;
+        color: {{ c_darkblue }};
+        font-size: 10px;
+    }
+
+    .item-list {
+        list-style-type:img|svg|2|2|/images/triangle.svg;
+    }
+</style>
+<h1 class="blue-font main-heading">Alexander Olkhovik</h1>
+<p class="main-subtitle">Back-End Software Engineer</p>
+<table>
+    <tr>
+        <td><a href="mailto:just1pman@gmail.com" class="social-link"><img src="/images/email-svgrepo-com.svg" width="10" height="10"><span> </span> just1pman@gmail.com</a></td>
+        <td><a href="tel:+375298267745" class="social-link"><img src="/images/phone-svgrepo-com.svg" width="8" height="8"><span> </span> +375(29)-826-77-45</a></td>
+        <td><a href="https://vk.com/alexander.olkhovik" class="social-link"><img src="/images/home-svgrepo-com.svg" width="8" height="8"><span> </span> alexander.olkhovik</a></td>
+        <td><a href="https://github.com/Just1pman" class="social-link"><img src="/images/github-svgrepo-com.svg" width="10" height="10"><span> </span>github.com/Just1pman</a></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td width="66%">
+            <h2 class="section-header blue-font">Experience</h2>
+            <div class="item">
+                <h3 class="item-header">Developer <span>@ Intexsoft</span></h3>
+                <span class="item-subheader">April 2021 - Present // , Grodno</span>
+                <ul class="item-list">
+                    <li>Write modern, performant, and robust code for a diverse array of client and internal projects</li>
+                    <li>Work with a variety of different languages, frameworks, and content management systems
+                        such as JavaScript, PHP, Vue, etc.</li>
+                    <li>Communicate and collaborate with multi-disciplinary teams of engineers,
+                        clients, and stakeholders on a daily basis</li>
+                </ul>
+            </div>
+            <div class="item">
+                <h3 class="item-header">Technician-Electronics <span>@ Azot</span></h3>
+                <span class="item-subheader">August 2019 - April 2021 // Grodno</span>
+                <ul class="item-list">
+                    <li>Maintenance and repair of electrical installations of varying complexity</li>
+                    <li>Adjustment of electrical equipment</li>
+                </ul>
+            </div>
+        </td>
+        <td width="4%"></td>
+        <td width="30%">
+            <h2 class="section-header blue-font">Skills</h2>
+            <div class="item">
+                <h3 class="item-header">Programming Languages</h3>
+                <span>PHP, JavaScript (ES6), HTML, CSS/Sass</span>
+            </div>
+            <div class="item">
+                <h3 class="item-header">Libraries & Frameworks</h3>
+                <span>Vue, jQuery</span>
+            </div>
+            <div class="item">
+                <h3 class="item-header">Tools & Platforms</h3>
+                <span>Git, Gulp, Webpack, Heroku, Docker</span>
+            </div>
+            <div class="item">
+                <h3 class="item-header">Design</h3>
+                <span>Figma, Photoshop</span>
+            </div>
+
+            <h2 class="section-header blue-font">Education</h2>
+            <div class="item">
+                <h3 class="item-header">Grodno Technological College</h3>
+                <span class="item-subheader">Septebmer 2015 - July 2019 // Hrodno</span>
+                <span>Operation of electrical equipment, microprocessor technology</span>
+            </div>
+
+            <h2 class="section-header blue-font">Interest</h2>
+            <div class="item"><span>running, swimming, reading</span></div>
+        </td>
+    </tr>
+</table>
